@@ -1,0 +1,18 @@
+
+#view-home .pf-projects .pf-visual::before,#view-home .pf-projects .pf-visual::after{content:none!important;display:none!important}
+#view-home .pf-row,#view-home .pf-visual,#view-home .pf-parallax,#view-home .pf-tilt,#view-home .pf-reveal{opacity:1!important;filter:none!important}
+#view-home .pf-visual{border:0!important;box-shadow:none!important;background:radial-gradient(ellipse 70% 64% at 50% 38%,rgba(132,160,195,.16),transparent 78%),radial-gradient(ellipse at 50% 100%,rgba(206,189,154,.045),transparent 70%)!important;overflow:visible;border-radius:0}
+#view-home .hy-monitor,#view-home .hy-phone-cluster{filter:drop-shadow(0 20px 28px rgba(0,0,0,.35))!important}
+#view-home .hy-monitor-screen,#view-home .hy-phone-screen{opacity:1!important;filter:none!important}
+#view-home .pf-row{border:0!important;background:transparent!important}
+#view-home .pf-projects{background:transparent!important;position:relative}
+#view-home main{background:radial-gradient(ellipse 55% 450px at 78% 1100px,rgba(87,120,161,.065),transparent 85%),#0c0d10}
+#view-home .ed-studio-hero{border:0!important;box-shadow:none!important}
+#view-home .cinema-cover{filter:brightness(.97) saturate(.8);mask-image:linear-gradient(#000 0%,#000 66%,transparent 100%);-webkit-mask-image:linear-gradient(#000 0%,#000 66%,transparent 100%)}
+#view-home .cinema-hover-cover{mask-image:none;-webkit-mask-image:none}
+#view-home .ed-studio-hero::after{background:linear-gradient(90deg,#0c0d1022,transparent 60%),linear-gradient(180deg,transparent 55%,rgba(12,13,16,.35) 80%,#0c0d10 100%)}
+#view-home .hy-work-intro{border:0!important;margin-top:-1px;padding-top:70px;position:relative;background:radial-gradient(ellipse 52% 200px at 50% 0%,rgba(111,145,190,.06),transparent 88%)!important}
+#view-home .cinema-about{background:radial-gradient(ellipse 40% 350px at 85% 10%,rgba(121,153,188,.065),transparent 88%)!important}
+#view-home .pf-works{background:radial-gradient(ellipse 48% 330px at 30% 15%,rgba(150,168,187,.05),transparent 85%)!important}
+#view-home footer.pf-footer.hy-footer{background:radial-gradient(ellipse at 50% 100%,rgba(129,155,184,.07),transparent 80%),#0c0d10!important}
+@media(max-width:700px){#view-home .hy-work-intro{padding-top:45px}#view-home .pf-visual{overflow:hidden}}

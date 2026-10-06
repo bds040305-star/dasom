@@ -1,0 +1,28 @@
+
+/* v7: make each case study its own viewport scroll container. This avoids all body/html overflow conflicts from the OS shell. */
+body.case-active{overflow:hidden!important;height:100vh!important;min-height:100vh!important;position:fixed!important;inset:0!important;width:100%!important;}
+html.case-active-html{overflow:hidden!important;height:100%!important;min-height:100%!important;}
+body.case-active #view-haevichi,
+body.case-active #view-lh,
+body.case-active #view-apple-tv{
+  position:fixed!important;
+  inset:0!important;
+  width:100vw!important;
+  height:100vh!important;
+  max-height:100vh!important;
+  min-height:0!important;
+  overflow-x:hidden!important;
+  overflow-y:auto!important;
+  -webkit-overflow-scrolling:touch!important;
+  overscroll-behavior-y:contain!important;
+  touch-action:pan-y!important;
+  z-index:900000!important;
+  background:#fff!important;
+  scrollbar-gutter:stable;
+}
+body.case-active #view-haevichi>header,
+body.case-active #view-lh>header,
+body.case-active #view-apple-tv>header{
+  position:sticky!important; top:0!important; z-index:50!important;
+}
+#os-back.show{position:fixed!important;z-index:9999999!important;}

@@ -1,0 +1,75 @@
+/* ============================================================
+   해비치 케이스 스터디 — 섹션 사이 여백 정리 (기존 220~270px → 130px 안팎)
+   ============================================================ */
+#view-haevichi #problem{ padding:110px 0 110px!important; }
+#view-haevichi #structure{ padding:130px 0!important; }
+#view-haevichi #system{ padding:130px 0!important; }
+#view-haevichi .solution-map{ padding:120px 0!important; }
+#view-haevichi #result{ padding:130px 0 120px!important; }
+#view-haevichi #reservation{ padding:130px 0!important; }
+#view-haevichi #test{ padding:130px 0!important; }
+#view-haevichi #role{ padding:130px 0!important; }
+#view-haevichi .sec-head{ margin-bottom:64px!important; }
+@media(max-width:900px){
+  #view-haevichi #problem, #view-haevichi #structure, #view-haevichi #system, #view-haevichi .solution-map,
+  #view-haevichi #result, #view-haevichi #reservation, #view-haevichi #test, #view-haevichi #role{ padding-top:84px!important; padding-bottom:84px!important; }
+  #view-haevichi .sec-head{ margin-bottom:44px!important; }
+}
+
+/* 섹션 안쪽에서 유독 컸던 간격도 함께 정리 */
+#view-haevichi #structure .sec-head{ margin-bottom:72px!important; }
+#view-haevichi #structure .wireframe-block{ margin:100px auto 0 0!important; }
+#view-haevichi #system .ds-group{ margin-top:88px!important; }
+#view-haevichi #test .note-box{ margin-top:72px!important; }
+
+/* ============================================================
+   "내가 만든 부분" 라벨 — 팀 프로젝트에서 본인 작업을 바로 알아보도록
+   ============================================================ */
+#view-haevichi .hv-mypart{ display:flex; align-items:stretch; flex-wrap:wrap; gap:10px; margin:38px 0 34px; }
+#view-haevichi .hv-mypart-label{ display:inline-flex; align-items:center; font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--muted,#777); margin-right:6px; }
+#view-haevichi .hv-part{ display:inline-flex; flex-direction:column; gap:3px; padding:11px 18px 12px; border-radius:14px; border:1px solid var(--line,#E2E1DB); background:#fff; text-decoration:none; color:var(--ink,#17191C); transition:transform .3s cubic-bezier(.2,.7,.2,1), border-color .25s ease, box-shadow .3s ease; }
+#view-haevichi .hv-part b{ font-size:14px; font-weight:700; letter-spacing:-.01em; }
+#view-haevichi .hv-part em{ font-style:normal; font-size:12.5px; color:var(--muted,#777); }
+#view-haevichi .hv-part.is-mine{ background:var(--accent,#1A5FA1); border-color:var(--accent,#1A5FA1); color:#fff; }
+#view-haevichi .hv-part.is-mine em{ color:rgba(255,255,255,.8); }
+#view-haevichi .hv-part:hover{ transform:translateY(-3px); box-shadow:0 14px 26px -16px rgba(26,95,161,.5); }
+#view-haevichi .hv-part.is-shared:hover{ border-color:var(--accent,#1A5FA1); }
+#view-haevichi .hv-mypart-more{ display:inline-flex; align-items:center; margin-left:4px; font-size:13px; font-weight:600; color:var(--accent,#1A5FA1); text-decoration:none; }
+#view-haevichi .hv-mypart-more:hover{ text-decoration:underline; }
+
+/* 섹션 번호 옆 배지 */
+#view-haevichi .hv-tag{ display:inline-flex; align-items:center; gap:7px; margin-left:14px; padding:5px 12px 5px 10px; border-radius:999px; font-size:11.5px; font-weight:700; letter-spacing:.01em; text-transform:none; vertical-align:middle; }
+#view-haevichi .hv-tag::before{ content:""; width:6px; height:6px; border-radius:50%; background:currentColor; }
+#view-haevichi .hv-tag.is-mine{ background:var(--accent,#1A5FA1); color:#fff; }
+#view-haevichi .hv-tag.is-shared{ background:transparent; color:var(--accent,#1A5FA1); border:1px solid var(--accent,#1A5FA1); }
+@media(max-width:700px){
+  #view-haevichi .hv-part{ flex:1 1 100%; }
+  #view-haevichi .hv-tag{ margin:10px 0 0; display:flex; width:max-content; }
+}
+
+/* ============================================================
+   모바일 목업 — 화면 크기를 프레임에 딱 맞추고, 스크롤바는 보이지 않게
+   (사이트를 실제 폰 너비 390px 로 그려서 화면에 맞게 축소)
+   ============================================================ */
+#view-haevichi #result .live-embed-mobile-row{ display:flex!important; justify-content:center!important; align-items:flex-start!important; gap:96px!important; margin-top:72px!important; }
+#view-haevichi #result .hv-phone{ --hvs:.749; --sbw:0px; margin:0; width:310px; flex:none; text-align:center; }
+#view-haevichi #result .hv-phone:nth-child(2){ margin-top:140px; }
+#view-haevichi .hv-phone-body{ position:relative; padding:9px; border-radius:46px; background:#141719; box-shadow:inset 0 0 0 1.5px #3A3F47, 0 40px 70px -28px rgba(17,30,39,.35), 0 12px 24px -14px rgba(0,0,0,.25); }
+#view-haevichi .hv-phone-body::before{ content:""; position:absolute; right:-3px; top:24%; width:3px; height:11%; background:#2A2D33; border-radius:0 3px 3px 0; }
+#view-haevichi .hv-phone-body::after{ content:""; position:absolute; left:-3px; top:19%; width:3px; height:6%; background:#2A2D33; border-radius:3px 0 0 3px; box-shadow:0 52px 0 #2A2D33; }
+#view-haevichi .hv-phone-screen{ position:relative; width:100%; aspect-ratio:390/844; border-radius:37px; overflow:hidden; background:#fff; }
+#view-haevichi .hv-phone-screen::after{ content:""; position:absolute; top:1.9%; left:50%; width:29%; height:3.1%; transform:translateX(-50%); background:#0A0B0D; border-radius:99px; z-index:9; pointer-events:none; }
+#view-haevichi .hv-phone-view{ position:absolute; left:0; top:0; width:390px; height:844px; overflow:hidden; transform:scale(var(--hvs)); transform-origin:0 0; }
+#view-haevichi .hv-phone-view iframe{ position:absolute; left:0; top:44px; width:calc(390px + var(--sbw)); height:800px; border:0; background:#fff; display:block; }
+#view-haevichi .hv-phone-status{ position:absolute; left:0; top:0; width:390px; height:44px; background:#fff; transform:scale(var(--hvs)); transform-origin:0 0; z-index:5; display:flex; align-items:center; justify-content:space-between; padding:8px 28px 0 34px; font-size:15px; font-weight:700; color:#171717; pointer-events:none; }
+#view-haevichi .hv-phone-status span{ display:flex; gap:6px; align-items:center; }
+#view-haevichi .hv-phone-guard{ position:absolute; inset:0; z-index:8; border:0; padding:0 0 calc(80px*var(--hvs)); background:transparent; cursor:pointer; display:flex; align-items:flex-end; justify-content:center; }
+#view-haevichi .hv-phone-guard span{ opacity:0; transform:translateY(8px); transition:opacity .3s ease, transform .3s ease; background:rgba(23,25,28,.88); color:#fff; font-size:12px; font-weight:600; padding:8px 14px; border-radius:999px; pointer-events:none; white-space:nowrap; }
+#view-haevichi .hv-phone-guard:hover span, #view-haevichi .hv-phone-guard:focus-visible span{ opacity:1; transform:none; }
+@media(hover:none){ #view-haevichi .hv-phone-guard span{ opacity:1; transform:none; } }
+#view-haevichi .hv-phone-screen.is-live .hv-phone-guard{ display:none; }
+#view-haevichi .hv-phone figcaption{ margin-top:24px; font-size:12.5px; color:var(--muted,#777); }
+@media(max-width:900px){
+  #view-haevichi #result .live-embed-mobile-row{ display:flex!important; flex-direction:column; align-items:center!important; gap:44px!important; margin-top:48px!important; }
+  #view-haevichi #result .hv-phone:nth-child(2){ margin-top:0; }
+}

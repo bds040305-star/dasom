@@ -1,0 +1,63 @@
+
+/* Personal dark workspace — no slogans, no corporate hero */
+#dasom-os{background:#080910!important;color:#f7f8fb!important;}
+#dasom-os .dos-wallpaper{
+  background:
+    radial-gradient(55vw 45vw at 18% 16%,rgba(109,81,180,.23),transparent 66%),
+    radial-gradient(48vw 44vw at 68% 78%,rgba(55,112,158,.20),transparent 67%),
+    radial-gradient(36vw 34vw at 38% 68%,rgba(67,144,126,.10),transparent 70%),
+    linear-gradient(145deg,#07080d 0%,#0b0e18 42%,#0a0d14 70%,#07080c 100%)!important;
+}
+#dasom-os .dos-wallpaper:before{
+  content:''!important;display:block!important;inset:-6%!important;opacity:.65!important;filter:blur(72px)!important;
+  background:radial-gradient(35vw 24vw at 22% 38%,rgba(144,100,255,.22),transparent 68%),radial-gradient(29vw 22vw at 59% 64%,rgba(70,193,171,.13),transparent 70%),radial-gradient(32vw 25vw at 84% 14%,rgba(76,114,255,.17),transparent 69%)!important;
+  transform:none!important;
+}
+#dasom-os .dos-wallpaper:after{background:linear-gradient(180deg,rgba(255,255,255,.015),rgba(0,0,0,.28))!important;}
+#dasom-os .dos-grain{opacity:.028!important;}
+#dasom-os .dos-greeting,#dasom-os .dos-desktop-note{display:none!important;}
+#dasom-os .dos-stage{overflow:hidden!important;}
+
+/* background visual language: UI layers + code + mobile frame */
+.workspace-art{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1;}
+.wa-orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.28;}
+.wa-orb.o1{width:34vw;height:34vw;left:-9vw;top:10vh;background:#6350a8;}
+.wa-orb.o2{width:28vw;height:28vw;left:38vw;bottom:-10vw;background:#326e70;opacity:.19;}
+.wa-orb.o3{width:22vw;height:22vw;right:16vw;top:8vh;background:#284c94;opacity:.18;}
+.wa-glass{position:absolute;border:1px solid rgba(255,255,255,.11);background:linear-gradient(135deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 30px 90px rgba(0,0,0,.2);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);}
+.wa-glass-main{left:8vw;top:13vh;width:min(58vw,880px);height:min(58vh,600px);border-radius:34px;transform:rotate(-5deg);opacity:.92;}
+.wa-grid{position:absolute;inset:0;border-radius:inherit;opacity:.17;background-image:linear-gradient(rgba(255,255,255,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.10) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(120deg,#000 0%,rgba(0,0,0,.7) 55%,transparent 100%);}
+.wa-dot{position:absolute;top:22px;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.34);}.wa-dot.d1{left:24px}.wa-dot.d2{left:40px}.wa-dot.d3{left:56px}
+.wa-ui{position:absolute;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.028);border-radius:16px;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);}
+.wa-ui.u1{left:7%;top:17%;width:37%;height:27%;}.wa-ui.u2{left:49%;top:17%;width:42%;height:17%;}.wa-ui.u3{left:49%;top:39%;width:42%;height:38%;}
+.wa-ui i{display:block;height:6px;border-radius:99px;background:rgba(255,255,255,.11);margin:15px 16px 0}.wa-ui i:nth-child(2){width:61%;opacity:.65}.wa-ui i:nth-child(3){width:42%;opacity:.4}.wa-ui i:nth-child(4){width:73%;opacity:.5}
+.wa-glass-code{left:17vw;bottom:8vh;width:min(34vw,520px);height:190px;border-radius:26px;transform:rotate(3deg);opacity:.75;padding:28px 30px;}
+.wa-glass-code span{display:block;height:5px;border-radius:99px;background:linear-gradient(90deg,rgba(94,232,196,.45),rgba(122,135,255,.30),rgba(255,255,255,.08));margin:13px 0;width:78%;}.wa-glass-code span:nth-child(2){width:52%;margin-left:8%}.wa-glass-code span:nth-child(3){width:86%;margin-left:3%}.wa-glass-code span:nth-child(4){width:44%;margin-left:14%}.wa-glass-code span:nth-child(5){width:69%;margin-left:6%}.wa-glass-code span:nth-child(6){width:35%;margin-left:18%}
+.wa-phone{position:absolute;left:58vw;bottom:10vh;width:130px;height:250px;border-radius:31px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:0 26px 70px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.07);transform:rotate(7deg);opacity:.77;backdrop-filter:blur(20px);}
+.wa-phone:before{content:'';position:absolute;left:50%;top:10px;transform:translateX(-50%);width:42px;height:8px;border-radius:99px;background:rgba(255,255,255,.11)}.wa-phone div{position:absolute;left:12px;right:12px;top:39px;height:58px;border-radius:13px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.028)}.wa-phone span{position:absolute;left:12px;right:12px;top:110px;height:92px;border-radius:13px;border:1px solid rgba(255,255,255,.07)}.wa-phone i{position:absolute;left:34px;right:34px;bottom:18px;height:4px;border-radius:99px;background:rgba(255,255,255,.12)}
+.wa-cursor{position:absolute;left:53vw;top:29vh;width:18px;height:25px;border-left:1.5px solid rgba(255,255,255,.34);border-top:1.5px solid rgba(255,255,255,.34);transform:skew(-14deg) rotate(-24deg);opacity:.6;}
+.wa-handle{position:absolute;width:6px;height:6px;border-radius:2px;border:1px solid rgba(137,118,255,.55);background:#12131b;opacity:.7}.wa-handle.h1{left:10.8vw;top:16.5vh}.wa-handle.h2{left:63vw;top:11.4vh}.wa-handle.h3{left:14vw;top:68vh}.wa-handle.h4{left:61vw;top:66vh}
+
+/* Dark glass menu */
+#dasom-os .dos-menubar{background:rgba(9,10,16,.58)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;color:#f4f5f8!important;box-shadow:0 10px 40px rgba(0,0,0,.12)!important;backdrop-filter:blur(28px) saturate(135%)!important;-webkit-backdrop-filter:blur(28px) saturate(135%)!important;}
+#dasom-os .dos-tool:hover{background:rgba(255,255,255,.08)!important;}
+
+/* Keep the four projects as the only desktop apps */
+#dasom-os .dos-files{z-index:7!important;right:3.6vw!important;top:7.5vh!important;gap:31px 28px!important;}
+#dasom-os .dos-file:hover,#dasom-os .dos-file.is-selected{background:rgba(255,255,255,.055)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.09)!important;backdrop-filter:blur(16px)!important;}
+
+/* Dock is navigation, not duplicated projects */
+#dasom-os .dos-dock{height:70px!important;padding:8px 10px!important;gap:7px!important;border-radius:22px!important;background:rgba(13,15,23,.52)!important;border:1px solid rgba(255,255,255,.12)!important;box-shadow:0 18px 48px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)!important;backdrop-filter:blur(32px) saturate(140%)!important;-webkit-backdrop-filter:blur(32px) saturate(140%)!important;}
+#dasom-os .dos-dock-icon{width:52px!important;height:52px!important;border-radius:14px!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 7px 18px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.09)!important;text-decoration:none!important;color:#f7f7f8!important;}
+#dasom-os .dos-dock-sep{background:rgba(255,255,255,.12)!important;}
+#dasom-os .dock-profile{background:linear-gradient(145deg,#232635,#12141c)!important}.dock-avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font:700 14px/1 -apple-system,BlinkMacSystemFont,sans-serif;background:linear-gradient(145deg,#8172d7,#3d526f);color:#fff;}
+#dasom-os .dock-archive{background:linear-gradient(145deg,#1b2429,#11161b)!important}.dock-stack{position:relative;width:30px;height:27px;display:block}.dock-stack i{position:absolute;left:3px;width:24px;height:16px;border-radius:5px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07)}.dock-stack i:nth-child(1){top:0;transform:rotate(-5deg)}.dock-stack i:nth-child(2){top:5px;transform:rotate(3deg)}.dock-stack i:nth-child(3){top:10px;background:linear-gradient(145deg,rgba(92,197,174,.26),rgba(104,96,198,.24))}
+#dasom-os .dock-github{background:linear-gradient(145deg,#252831,#111217)!important;font-size:25px!important}.dock-github i{font-size:25px!important}
+#dasom-os .dos-dock-icon:before{background:rgba(18,19,25,.88)!important;color:#fff!important;border:1px solid rgba(255,255,255,.08)!important;backdrop-filter:blur(16px)!important;}
+
+/* Dark mode for OS windows */
+#dasom-os .dos-window{background:rgba(15,17,24,.86)!important;border:1px solid rgba(255,255,255,.10)!important;color:#f3f4f7!important;box-shadow:0 35px 100px rgba(0,0,0,.58),0 2px 12px rgba(0,0,0,.28)!important;backdrop-filter:blur(36px) saturate(135%)!important;-webkit-backdrop-filter:blur(36px) saturate(135%)!important;}
+#dasom-os .dos-window-bar{background:rgba(19,21,29,.72)!important;border-bottom:1px solid rgba(255,255,255,.07)!important;color:#e9eaf0!important;}
+#dasom-os .dos-finder-body{background:#101219!important}.dos-sidebar{background:rgba(20,23,31,.82)!important;border-right:1px solid rgba(255,255,255,.06)!important}.dos-sidebar button{color:#cfd2dc!important}.dos-sidebar button.active{background:rgba(93,116,214,.65)!important;color:#fff!important}.side-title{color:#6f7481!important}.dos-finder-grid{background:rgba(10,12,18,.72)!important}.finder-file b{color:#f2f3f7!important}.finder-file small{color:#7f8492!important}.finder-file:hover{background:rgba(255,255,255,.05)!important}.dos-window-search{background:rgba(255,255,255,.06)!important;border-color:rgba(255,255,255,.08)!important;color:#959aa8!important}.dos-window-controls button{color:#a4a8b4!important}
+#dasom-os .dos-project-body{background:rgba(13,15,21,.92)!important;color:#f4f4f7!important}.dos-project-copy p{color:#9ea3af!important}.project-chip{border-color:rgba(255,255,255,.10)!important}.dos-open-case{background:#f4f5f7!important;color:#11131a!important}.about-body,.naver-body,.archive-body,.weather-body{background:rgba(12,14,20,.95)!important;color:#f3f4f7!important}.about-intro{border-right:1px solid rgba(255,255,255,.07)!important}.about-intro p,.archive-head p{color:#9ca1ad!important}.about-tool-grid span{background:rgba(255,255,255,.055)!important;color:#e9eaf0!important}.archive-item{background:rgba(255,255,255,.045)!important;border-color:rgba(255,255,255,.07)!important;color:#eef0f5!important}.naver-grid article{background:rgba(255,255,255,.045)!important;color:#eef0f5!important}.weather-orb{background:linear-gradient(145deg,rgba(36,54,69,.82),rgba(21,25,34,.72))!important;box-shadow:0 34px 70px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.08)!important}
+@media(max-width:1000px){.workspace-art{opacity:.72}.wa-glass-main{left:-10vw;width:78vw}.wa-glass-code{left:8vw;width:50vw}.wa-phone{display:none}.wa-cursor{display:none}}

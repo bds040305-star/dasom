@@ -1,0 +1,90 @@
+
+/* Do only what the user requested: show only 4 project app icons like the sample */
+#dasom-os .dos-files {
+  right: 34px !important;
+  top: 74px !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 152px) !important;
+  gap: 34px 34px !important;
+  align-content: start !important;
+}
+#dasom-os .dos-file[data-project="about"],
+#dasom-os .dos-file[data-project="archive"],
+#dasom-os .dos-file[data-project="naver"],
+#dasom-os .dos-file[data-project="weather"] {
+  display: none !important;
+}
+#dasom-os .dos-file {
+  min-height: 152px !important;
+  padding: 12px 10px 10px !important;
+  border-radius: 22px !important;
+  gap: 10px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+#dasom-os .dos-file:hover,
+#dasom-os .dos-file.is-selected {
+  background: rgba(255,255,255,0.10) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+#dasom-os .dos-app-icon.project-real-icon {
+  width: 98px !important;
+  height: 98px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+#dasom-os .dos-app-icon.project-real-icon::before,
+#dasom-os .dos-app-icon.project-real-icon::after {
+  display: none !important;
+  content: none !important;
+}
+#dasom-os .dos-app-icon.project-real-icon img {
+  display: none !important;
+}
+#dasom-os .dos-file[data-project="haevichi"] .dos-app-icon.project-real-icon {
+  background-color: #f5f6fa !important;
+  background-image: url('../assets/images/001-img-14a3613a7fe1.png') !important;
+  background-size: 66% auto !important;
+}
+#dasom-os .dos-file[data-project="lh"] .dos-app-icon.project-real-icon {
+  background-color: #f5f6fa !important;
+  background-image: url('../assets/images/002-img-012f15f04000.png') !important;
+  background-size: 72% auto !important;
+}
+#dasom-os .dos-file[data-project="apple"] .dos-app-icon.project-real-icon {
+  background-color: #0c0c0e !important;
+  background-image: url('../assets/images/003-img-fe50bd9e1fa7.png') !important;
+  background-size: 82% auto !important;
+}
+#dasom-os .dos-file[data-project="wells"] .dos-app-icon.project-real-icon {
+  background-color: #f5f6fa !important;
+  background-image: url('../assets/images/004-img-fcfd111fd325.png') !important;
+  background-size: 62% auto !important;
+}
+#dasom-os .dos-file-name {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.60) !important;
+  max-width: 120px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+#dasom-os .dos-file-meta { display: none !important; }
+@media (max-width: 1000px) {
+  #dasom-os .dos-files {
+    right: 14px !important;
+    top: 74px !important;
+    grid-template-columns: repeat(2, 132px) !important;
+    gap: 26px 18px !important;
+  }
+  #dasom-os .dos-file { min-height: 140px !important; }
+  #dasom-os .dos-app-icon.project-real-icon { width: 90px !important; height: 90px !important; }
+}

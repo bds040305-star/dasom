@@ -1,0 +1,17 @@
+
+/* Apple TV: single app surface, no inner black rounded square */
+#dasom-os .dos-file[data-project="apple"] .dos-app-icon.project-real-icon{
+  background:#111216 !important;
+  background-image:none !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+#dasom-os .dos-file[data-project="apple"] .dos-app-icon.project-real-icon img{
+  display:block !important;
+  width:68% !important;
+  height:68% !important;
+  object-fit:contain !important;
+  filter:none !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}

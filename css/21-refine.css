@@ -1,0 +1,43 @@
+
+#view-home{--hero:#2f6bff;--ink:#0d1530;--lime:#d3f95b}
+#view-home .ed-studio-hero{background:var(--hero)}
+#view-home .ed-studio-glow{background:radial-gradient(ellipse 60% 40% at 50% 0%,rgba(255,255,255,.22),transparent 70%)}
+#view-home header.pf-nav.ed-hybrid-nav,#view-home header.pf-nav.ed-hybrid-nav.is-scrolled{background:rgba(11,11,14,.72)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:0!important}
+#view-home .ed-studio-topline,#view-home .pf-role{color:rgba(255,255,255,.72)}
+#view-home .ed-studio-eyebrow{color:rgba(255,255,255,.8)}
+#view-home .ed-studio-description{color:rgba(255,255,255,.86)}
+#view-home .ed-studio-copy h1 em{background:none;-webkit-text-fill-color:var(--lime);color:var(--lime);position:relative}
+#view-home .ed-studio-copy h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.02em;height:.08em;border-radius:99px;background:var(--lime);opacity:.4}
+#view-home .ed-float{background:#f4f3ec!important;color:var(--ink)!important;border:1.5px solid var(--ink)!important;box-shadow:5px 6px 0 var(--lime)!important;filter:none!important}
+#view-home .ed-float::before,#view-home .ed-float::after{display:none!important}
+#view-home .ed-float span,#view-home .ed-float svg{color:var(--ink)!important;text-shadow:none!important}
+#view-home .ed-float small{color:rgba(255,255,255,.9)!important;text-shadow:none!important}
+#view-home .pf-card.is-empty{display:none!important}
+#view-home .hy-scene-dissolve{background-image:linear-gradient(#2f6bff 0%,#2f6bff 10%,#6f97ff 42%,#bcd0ff 67%,#e7eeff 88%,#f8f9f6 100%)!important}
+#view-home .ed-workspace-wrap{filter:drop-shadow(0 30px 40px rgba(8,22,92,.32))!important}
+#view-home .ed-workspace-stage{box-shadow:0 0 0 7px rgba(255,255,255,.08),0 40px 90px rgba(8,22,92,.34)!important}
+html,body{overflow-x:clip!important}
+body{overflow-y:visible!important}
+#view-home .ed-workspace-wrap{-webkit-mask-image:linear-gradient(#000 0%,#000 66%,transparent 96%);mask-image:linear-gradient(#000 0%,#000 66%,transparent 96%)}
+#view-home .ed-workspace-wrap::before{content:"";position:absolute;inset:-56px -44px -20px;z-index:-1;border-radius:44px;background:radial-gradient(rgba(255,255,255,.28) 1.2px,transparent 1.6px) 0 0/24px 24px,linear-gradient(160deg,rgba(255,255,255,.22),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.28);pointer-events:none}
+#view-home .pf-eyebrow{color:#2f6bff}
+#view-home .pf-title{color:#0d1530;font-weight:800}
+#view-home .pf-desc{color:#4a4f5c}
+#view-home .pf-visual{background:radial-gradient(circle at 70% 25%,rgba(255,255,255,.9),transparent 45%),linear-gradient(135deg,#e6efff,#f4f7ff)!important;border:1px solid rgba(47,107,255,.14)}
+#view-home .pf-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:#0d1530;color:#fff;font-weight:700;border:0}
+#view-home .hy-scene-dissolve{min-height:clamp(220px,28svh,320px)!important}
+#view-home .hy-hero-veil{background:linear-gradient(180deg,rgba(47,107,255,.08),rgba(47,107,255,.7) 72%,#2f6bff)!important;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+#view-home .hy-work-intro span{color:#2f6bff}
+#view-home .hy-scene-dissolve::after{background-image:linear-gradient(#2f6bff 0%,rgba(47,107,255,0) 20%,rgba(0,0,0,0) 79%,#f8f9f6 100%)!important}
+#view-home .hy-scene-dissolve::before{opacity:.35}
+
+
+#view-home .ed-studio-copy h1,#view-home .hy-work-intro h2,#view-home .pf-title,#view-home .pf-works-title{letter-spacing:-.05em}
+#view-home .ed-studio-description,#view-home .hy-work-intro p,#view-home .pf-sub,#view-home .pf-desc{letter-spacing:-.01em}
+#view-home header.pf-nav.ed-hybrid-nav .pf-links a:not(.hy-nav-contact){color:rgba(255,255,255,.88)!important}
+#view-home header.pf-nav.ed-hybrid-nav .pf-role{color:rgba(255,255,255,.75)!important}
+@media(min-width:801px){
+#view-home .pf-nav-inner,#view-home .ed-hybrid-nav .pf-nav-inner,#view-home .ed-studio-topline,#view-home .hy-work-intro,#view-home .pf-projects,#view-home .pf-works{width:min(calc(100% - 96px),1500px);margin-left:auto;margin-right:auto}
+#view-home .pf-works{padding-top:140px;padding-bottom:140px}
+#view-home .pf-row--text-left .pf-text{padding-left:0}
+}

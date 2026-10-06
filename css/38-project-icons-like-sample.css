@@ -1,0 +1,82 @@
+
+#dasom-os .dos-files{
+  right:32px !important;
+  top:28px !important;
+  grid-template-columns:repeat(2, 148px) !important;
+  gap:38px 26px !important;
+}
+#dasom-os .dos-file{
+  min-height:156px !important;
+  padding:14px 10px 12px !important;
+  border-radius:20px !important;
+  gap:12px !important;
+}
+#dasom-os .dos-file:hover,
+#dasom-os .dos-file.is-selected{
+  background:rgba(255,255,255,.11) !important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.16), 0 10px 24px rgba(17,22,48,.10) !important;
+  backdrop-filter:blur(12px) !important;
+  -webkit-backdrop-filter:blur(12px) !important;
+}
+#dasom-os .dos-app-icon{
+  width:96px !important;
+  height:96px !important;
+  border-radius:28px !important;
+  background:linear-gradient(180deg,#ffffff,#eef1f7) !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.85) !important;
+}
+#dasom-os .dos-app-icon.has-logo{
+  background:linear-gradient(180deg,#ffffff,#eef1f7) !important;
+}
+#dasom-os .dos-app-icon.has-logo img{
+  width:72% !important;
+  height:72% !important;
+  object-fit:contain !important;
+  filter:none !important;
+}
+#dasom-os .dos-app-icon.has-logo.wide img{
+  width:72% !important;
+  height:72% !important;
+}
+#dasom-os .dos-app-icon.has-logo.dark{
+  background:linear-gradient(180deg,#26272d,#070708) !important;
+}
+#dasom-os .dos-app-icon.has-logo.dark img{
+  width:82% !important;
+  height:82% !important;
+}
+#dasom-os .dos-app-icon.has-logo.wells img{
+  width:68% !important;
+  height:22% !important;
+}
+#dasom-os .dos-file-name{
+  font-size:11px !important;
+  font-weight:600 !important;
+  color:#ffffff !important;
+  text-shadow:0 1px 4px rgba(0,0,0,.60) !important;
+  max-width:120px !important;
+}
+#dasom-os .dos-file-meta{display:none !important;}
+#dasom-os .icon-about{
+  background:linear-gradient(180deg,#6ec6ff 0 42%, #f5f7fb 42% 100%) !important;
+}
+#dasom-os .icon-about .ds-monogram{
+  font-size:32px !important;
+  font-weight:700 !important;
+  color:#8ea0b6 !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.85),0 2px 8px rgba(0,0,0,.10) !important;
+}
+#dasom-os .icon-archive{
+  background:linear-gradient(180deg,#6ec6ff 0 42%, #6b73bc 42% 100%) !important;
+}
+#dasom-os .icon-archive .archive-glyph{
+  width:36px !important;
+  height:36px !important;
+  border-radius:11px !important;
+  font-size:18px !important;
+}
+@media(max-width:1000px){
+  #dasom-os .dos-files{grid-template-columns:repeat(2, 128px) !important; gap:28px 18px !important; right:14px !important; top:16px !important;}
+  #dasom-os .dos-file{min-height:142px !important;}
+  #dasom-os .dos-app-icon{width:88px !important;height:88px !important;}
+}

@@ -1,0 +1,13 @@
+
+  /* Improved navigation and keyboard clarity. The monochrome ocean animation is intentionally untouched. */
+  .skip-link{position:fixed;top:12px;left:12px;z-index:10000;padding:10px 14px;background:#fff;color:#17191C;border:2px solid #2B4A5E;transform:translateY(-160%);transition:transform .2s ease;font-size:13px;font-weight:700;}
+  .skip-link:focus{transform:translateY(0);outline:none;}
+  :focus-visible{outline:3px solid #2B4A5E;outline-offset:4px;}
+  button:focus-visible{outline-offset:3px;}
+  /* Replace the persistent pencil trail with a quiet pointer cue. */
+  canvas[style*="z-index:9999"]{display:none!important;}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
+    /* Preserve the requested black-and-white ocean movement. */
+    .hero-ocean .ocean-photo{animation:heroPhotoDrift 34s ease-in-out infinite alternate!important;}
+  }

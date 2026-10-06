@@ -1,0 +1,9 @@
+
+#view-lh .lh-proposal{padding:56px 0;border-top:1px solid var(--line);}
+#view-lh .lh-proposal h3{font-size:30px;line-height:1.4;letter-spacing:-.035em;margin:16px 0;}
+#view-lh .lh-proposal>p,#view-lh .lh-two-columns p{font-size:16px;line-height:1.85;color:#525750;max-width:900px;}
+#view-lh .lh-two-columns{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:32px 0;}
+#view-lh .lh-two-columns h4{font-size:19px;color:var(--accent);margin:0 0 14px;}
+#view-lh .lh-proposal .role-list{margin-top:28px;}
+#view-lh .note-box{line-height:1.85;}
+@media(max-width:760px){#view-lh .lh-two-columns{grid-template-columns:1fr;gap:20px;}#view-lh .lh-proposal h3{font-size:24px;}}

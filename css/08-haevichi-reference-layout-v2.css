@@ -1,0 +1,158 @@
+
+/* The supplied Behance reference is used as the composition blueprint.
+   All Haevichi copy, embedded images and live screens remain unchanged. */
+#view-haevichi{
+  --ref-blue:#0f4774;
+  --ref-blue-bright:#1a5fa1;
+  --ref-pale:#f2f5f6;
+  --ref-warm:#f4f0e8;
+  --ref-yellow:#d5a92b;
+  --ref-black:#151719;
+  background:#fff!important;color:var(--ref-black);overflow:hidden;
+}
+#view-haevichi .ambient-ocean{display:none!important;}
+#view-haevichi .wrap{width:min(1180px,calc(100vw - 112px));}
+#view-haevichi>header{background:rgba(255,255,255,.9)!important;border:0!important;backdrop-filter:blur(16px);}
+#view-haevichi .section{padding:190px 0!important;border:0!important;background:#fff;}
+#view-haevichi .sec-head{display:grid!important;grid-template-columns:1.18fr .52fr!important;gap:120px!important;align-items:end!important;margin:0 0 100px!important;}
+#view-haevichi .sec-num{grid-column:1/-1;font-size:9px!important;letter-spacing:.18em;color:#7290a4!important;text-transform:uppercase;}
+#view-haevichi .sec-title{font-size:clamp(42px,4.3vw,67px)!important;line-height:1.06!important;letter-spacing:-.055em!important;font-weight:500!important;margin:10px 0 0!important;max-width:780px;}
+#view-haevichi .sec-desc{font-size:13px!important;line-height:1.8!important;color:#73787c!important;max-width:360px!important;margin:0!important;}
+
+/* 02 — small observations scattered in open space. */
+#view-haevichi #problem{padding-top:230px!important;}
+#view-haevichi #problem::before{content:'';position:absolute;left:8%;top:70px;width:180px;height:180px;border-radius:32px;background:var(--ref-blue);transform:rotate(-5deg);}
+#view-haevichi #problem .ps-list{display:grid!important;grid-template-columns:repeat(12,1fr)!important;gap:28px!important;border:0!important;align-items:start;}
+#view-haevichi #problem .ps-item{display:block!important;border:0!important;border-radius:24px;padding:35px!important;background:var(--ref-pale);min-height:310px;box-shadow:none!important;}
+#view-haevichi #problem .ps-item:nth-child(1){grid-column:1/5;margin-top:190px;background:#edf2f5;}
+#view-haevichi #problem .ps-item:nth-child(2){grid-column:6/11;background:var(--ref-blue);color:#fff;min-height:430px;}
+#view-haevichi #problem .ps-item:nth-child(3){grid-column:2/7;margin-top:20px;background:var(--ref-warm);}
+#view-haevichi #problem .ps-item:nth-child(4){grid-column:8/13;margin-top:120px;background:#f1f3f3;}
+#view-haevichi #problem .ps-num{display:block!important;font-size:10px!important;margin-bottom:54px!important;color:#7592a5!important;}
+#view-haevichi #problem .ps-item:nth-child(2) .ps-num,#view-haevichi #problem .ps-item:nth-child(2) .ps-problem{color:rgba(255,255,255,.62)!important;}
+#view-haevichi #problem .ps-title{font-size:25px!important;line-height:1.22!important;letter-spacing:-.035em;margin-bottom:22px!important;}
+#view-haevichi #problem .ps-problem,#view-haevichi #problem .ps-solution{font-size:12.5px!important;line-height:1.75!important;}
+
+/* 03 — one large blue brand field, like the reference's grass/logo stage. */
+#view-haevichi #structure{background:var(--ref-blue)!important;color:#fff;padding:220px 0!important;}
+#view-haevichi #structure .sec-head{margin-bottom:140px!important;}
+#view-haevichi #structure .sec-num,#view-haevichi #structure .sec-desc{color:#b5ccdb!important;}
+#view-haevichi #structure .ia-tree{width:100%;margin:0!important;padding:64px 32px 40px!important;background:#fff;border-radius:30px;box-shadow:0 40px 90px rgba(0,0,0,.2);}
+#view-haevichi #structure>.wrap>.doc-caption{width:100%;margin:16px 0 0!important;color:#b5ccdb!important;text-align:left;}
+#view-haevichi #structure .wireframe-block{width:60%!important;margin:180px auto 0 0!important;padding:0!important;border:0!important;background:transparent!important;align-items:flex-start!important;}
+#view-haevichi #structure .wireframe-img{border-radius:12px;box-shadow:0 42px 100px rgba(0,0,0,.25);}
+#view-haevichi #structure .wireframe-block .doc-caption{color:#c7d8e2!important;text-align:left!important;}
+
+/* 04 — typography and colors as isolated art objects. */
+#view-haevichi #system{padding:250px 0!important;}
+#view-haevichi #system .ds-group{margin-top:150px!important;}
+#view-haevichi #system .ds-group-label{font-size:9px!important;letter-spacing:.2em!important;color:#7692a4!important;margin-bottom:35px!important;}
+#view-haevichi #system .ds-cards{display:grid!important;gap:50px!important;border:0!important;align-items:start;}
+#view-haevichi #system .ds-cards-foundation{grid-template-columns:1.15fr .85fr!important;}
+#view-haevichi #system .ds-card{border:0!important;border-radius:28px!important;background:#f2f4f4!important;padding:44px!important;min-height:480px!important;box-shadow:none!important;}
+#view-haevichi #system .ds-card-type{margin-top:120px;background:#fff!important;box-shadow:0 28px 80px rgba(20,40,54,.09)!important;}
+#view-haevichi #system .ds-card-color{background:var(--ref-blue)!important;color:#fff;min-height:650px!important;}
+#view-haevichi #system .ds-cards-components{grid-template-columns:1.15fr .7fr .7fr!important;gap:25px!important;}
+#view-haevichi #system .ds-card-comp{min-height:330px!important;padding:32px!important;}
+#view-haevichi #system .ds-card-comp:nth-child(2){margin-top:140px;}
+#view-haevichi #system .ds-card-comp:nth-child(3){margin-top:50px;background:var(--ref-warm)!important;}
+
+/* 05 — compact decision rows on a pale intermission. */
+#view-haevichi .solution-map{background:#f1f5f7!important;padding:220px 0!important;}
+#view-haevichi .solution-head{grid-template-columns:1.1fr .5fr!important;gap:130px!important;margin-bottom:120px!important;}
+#view-haevichi .solution-list{width:74%;margin-left:auto!important;border-top:1px solid #91a1aa!important;}
+#view-haevichi .solution-item{grid-template-columns:54px 1fr!important;gap:18px!important;padding:38px 0!important;border-bottom:1px solid #c8d1d6!important;}
+#view-haevichi .solution-item strong{grid-column:2;font-size:12px!important;margin-top:13px;color:var(--ref-blue)!important;}
+
+/* 06 — working screens alternate left/right, matching the reference's device trail. */
+#view-haevichi #result{padding:260px 0 230px!important;}
+#view-haevichi #result>.wrap>.compare-label{display:inline-flex;margin:0 0 18px;}
+#view-haevichi #result .ix-tabnav{width:70%;margin:0 auto 100px!important;border:0!important;display:flex!important;justify-content:center;gap:12px;}
+#view-haevichi #result .ix-tab{border:1px solid #d7dde0!important;border-radius:999px!important;padding:12px 18px!important;background:#fff!important;}
+#view-haevichi #result .ix-tab.is-active{background:var(--ref-black)!important;color:#fff!important;}
+#view-haevichi #result .ix-panel{min-height:900px;}
+#view-haevichi #result .ix-why{width:340px!important;font-size:13px!important;line-height:1.85!important;margin:0 0 55px auto!important;border-left:2px solid var(--ref-blue)!important;padding-left:20px!important;color:#6c7276!important;}
+#view-haevichi #result .live-embed{width:86%!important;margin:0 auto 0 0!important;transform:none!important;border:0!important;border-radius:28px!important;overflow:hidden!important;box-shadow:0 45px 100px rgba(22,42,55,.14)!important;}
+#view-haevichi #result .live-embed iframe{height:720px!important;}
+#view-haevichi #result #ixPanel2 .live-embed{margin-left:auto!important;margin-right:0!important;width:76%!important;}
+#view-haevichi #result .live-embed-mobile-row{display:flex!important;gap:80px!important;justify-content:center!important;align-items:flex-start!important;margin-top:100px!important;}
+#view-haevichi #result .live-embed-mobile{width:310px!important;border-radius:42px!important;border:8px solid #141719!important;box-shadow:0 40px 80px rgba(17,30,39,.2)!important;}
+#view-haevichi #result .live-embed-mobile:nth-child(2){margin-top:170px!important;}
+#view-haevichi #result .live-embed-mobile iframe{height:640px!important;}
+#view-haevichi #result .mobile-facts{width:50%;margin-left:auto!important;}
+
+/* 07 — two preserved Haevichi mockups on separate floating stages. */
+#view-haevichi #reservation{background:#f4f5f4!important;padding:230px 0 270px!important;}
+#view-haevichi #reservation> .wrap>svg{width:76%!important;margin:0 0 150px auto!important;}
+#view-haevichi #reservation .reservation-pair{display:block!important;}
+#view-haevichi #reservation .reservation-col{display:grid!important;grid-template-columns:290px 1fr!important;column-gap:90px!important;align-items:center!important;margin-bottom:190px!important;}
+#view-haevichi #reservation .reservation-col:nth-child(2){grid-template-columns:1fr 290px!important;}
+#view-haevichi #reservation .reservation-col:nth-child(2) .reservation-col-head,#view-haevichi #reservation .reservation-col:nth-child(2)>.ix-why{grid-column:2!important;}
+#view-haevichi #reservation .reservation-col:nth-child(2) .mockup-grid{grid-column:1!important;grid-row:1/span 3!important;}
+#view-haevichi #reservation .reservation-col-head{align-self:end;}
+#view-haevichi #reservation .reservation-col>.ix-why{font-size:13px!important;line-height:1.85!important;color:#697075!important;}
+#view-haevichi #reservation .mockup-grid{grid-column:2!important;grid-row:1/span 3!important;margin:0!important;background:#fff!important;padding:28px!important;border-radius:28px!important;box-shadow:0 38px 90px rgba(27,42,51,.12)!important;}
+#view-haevichi #reservation .mockup-card{border:0!important;background:transparent!important;}
+#view-haevichi #reservation .ba-browser-frame{border-radius:15px!important;overflow:hidden!important;}
+
+/* 08 — research cards, then strong dark ending. */
+#view-haevichi #test{padding:250px 0!important;}
+#view-haevichi #test .feedback-round{width:82%;margin-left:auto!important;}
+#view-haevichi #test .fb-flow{gap:18px!important;}
+#view-haevichi #test .fb-row{border:0!important;gap:15px!important;}
+#view-haevichi #test .fb-card{border:0!important;border-radius:18px!important;padding:26px!important;min-height:100px;}
+#view-haevichi #test .fb-card-before{background:#f1f3f4!important;}
+#view-haevichi #test .fb-card-after{background:var(--ref-blue)!important;color:#fff!important;}
+#view-haevichi #test .note-box{width:55%;margin:120px 0 0!important;border:0!important;border-radius:24px!important;background:var(--ref-warm)!important;padding:42px!important;}
+#view-haevichi #role{background:var(--ref-black)!important;color:#fff;padding:240px 0!important;}
+#view-haevichi #role .sec-num,#view-haevichi #role .sec-desc{color:#8ea4b3!important;}
+#view-haevichi #role .role-list{width:76%;margin-left:auto!important;border-top:1px solid rgba(255,255,255,.35)!important;}
+#view-haevichi #role .role-item{padding:38px 0!important;border-color:rgba(255,255,255,.2)!important;}
+#view-haevichi #role .role-tag{color:#8db9d5!important;}
+#view-haevichi>footer{background:var(--ref-black)!important;color:#fff!important;border-top:1px solid rgba(255,255,255,.14)!important;}
+#view-haevichi .footer-mark{color:rgba(255,255,255,.5)!important;}
+#view-haevichi .footer-back{color:#fff!important;}
+#view-haevichi .footer-back:hover{color:#8fb9dc!important;opacity:1!important;}
+
+@media(max-width:900px){
+ #view-haevichi .wrap,#view-haevichi .p-hero-inner{width:calc(100vw - 40px)!important;}
+ #view-haevichi .section{padding:120px 0!important;}
+ #view-haevichi .sec-head{grid-template-columns:1fr!important;gap:24px!important;margin-bottom:60px!important;}
+ #view-haevichi #problem .ps-list{grid-template-columns:1fr 1fr!important;}
+ #view-haevichi #problem .ps-item{grid-column:auto!important;margin:0!important;min-height:340px;}
+ #view-haevichi #structure .ia-tree,#view-haevichi #structure>.wrap>.doc-caption{width:100%;}
+ #view-haevichi #structure .wireframe-block{width:75%!important;}
+ #view-haevichi #system .ds-cards-components{grid-template-columns:1fr 1fr!important;}
+ #view-haevichi #system .ds-card-comp:nth-child(2),#view-haevichi #system .ds-card-comp:nth-child(3){margin-top:0;}
+ #view-haevichi .solution-list{width:100%;}
+ #view-haevichi #result .live-embed,#view-haevichi #result #ixPanel2 .live-embed{width:100%!important;}
+ #view-haevichi #result .live-embed-mobile-row{gap:24px!important;}
+ #view-haevichi #reservation .reservation-col,#view-haevichi #reservation .reservation-col:nth-child(2){display:block!important;}
+ #view-haevichi #reservation .mockup-grid{margin-top:35px!important;}
+ #view-haevichi #test .feedback-round{width:100%;}
+}
+@media(max-width:600px){
+ #view-haevichi .wrap,#view-haevichi .p-hero-inner{width:calc(100vw - 28px)!important;}
+ #view-haevichi .section{padding:88px 0!important;}
+ #view-haevichi #problem::before{display:none;}
+ #view-haevichi #problem .ps-list{display:block!important;}
+ #view-haevichi #problem .ps-item{margin-bottom:14px!important;min-height:auto;}
+ #view-haevichi #structure .ia-tree{width:100%;overflow-x:auto;border-radius:16px;padding:35px 18px 20px!important;}
+ #view-haevichi #structure .wireframe-block{width:100%!important;margin-top:90px!important;}
+ #view-haevichi #system .ds-cards-foundation,#view-haevichi #system .ds-cards-components{grid-template-columns:1fr!important;}
+ #view-haevichi #system .ds-card-type{margin-top:0;}
+ #view-haevichi #system .ds-card{min-height:340px!important;border-radius:18px!important;padding:24px!important;}
+ #view-haevichi #result .ix-tabnav{width:100%;overflow-x:auto;justify-content:flex-start!important;}
+ #view-haevichi #result .ix-panel{min-height:0;}
+ #view-haevichi #result .ix-why,#view-haevichi #result .mobile-facts{width:100%!important;}
+ #view-haevichi #result .live-embed iframe{height:430px!important;}
+ #view-haevichi #result .live-embed-mobile-row{display:block!important;}
+ #view-haevichi #result .live-embed-mobile{width:270px!important;margin:35px auto!important;}
+ #view-haevichi #result .live-embed-mobile:nth-child(2){margin-top:70px!important;}
+ #view-haevichi #reservation> .wrap>svg{width:100%!important;margin-bottom:70px!important;}
+ #view-haevichi #reservation .reservation-col{margin-bottom:100px!important;}
+ #view-haevichi #reservation .mockup-grid{padding:10px!important;border-radius:15px!important;}
+ #view-haevichi #test .fb-row{display:block!important;}
+ #view-haevichi #test .fb-arrow{display:block;transform:rotate(90deg);margin:5px auto;text-align:center;}
+ #view-haevichi #test .note-box,#view-haevichi #role .role-list{width:100%;}
+}

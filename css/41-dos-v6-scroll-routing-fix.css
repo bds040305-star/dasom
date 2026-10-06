@@ -1,0 +1,13 @@
+
+/* v6: hard scroll fix for case studies + stable OS return */
+html.case-active-html{overflow-y:auto!important;overflow-x:hidden!important;height:auto!important;min-height:100%!important;}
+html.case-active-html body.case-active{overflow-y:auto!important;overflow-x:hidden!important;height:auto!important;min-height:100%!important;position:static!important;}
+html.case-active-html body.case-active #view-haevichi,
+html.case-active-html body.case-active #view-lh,
+html.case-active-html body.case-active #view-apple-tv{overflow:visible!important;min-height:100vh!important;height:auto!important;}
+html.case-active-html body.case-active #view-haevichi>header,
+html.case-active-html body.case-active #view-lh>header{position:sticky!important;top:0!important;}
+#win-finder .dos-finder-grid{overflow-y:auto!important;min-height:0!important;}
+#win-archive .archive-body,#win-naver .naver-body,#win-weather .weather-body,#win-about .about-body{overflow-y:auto!important;min-height:0!important;}
+.os-back.show{display:flex!important;align-items:center;gap:7px!important;}
+.os-back.show:before{content:'⌂';font-size:13px;}

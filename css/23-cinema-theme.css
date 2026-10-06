@@ -1,0 +1,31 @@
+
+html,body{width:100%;max-width:100%;overflow-x:clip;background:#101014}
+#view-home{--bg:#101014;--bg-raised:#19191e;--hero:#101014;--ink:#f4eee5;--muted:#a49c95;--line:#343035;--accent:#d78462;--lime:#e6ba92;background:#101014;color:#f4eee5}
+#view-home .ed-studio-hero{position:relative;min-height:0;height:calc(100svh - 82px);min-height:680px;max-height:1080px;padding:28px 0 40px;background:#101014!important;isolation:isolate;overflow:hidden}
+#view-home .cinema-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%;z-index:-2}
+#view-home .ed-studio-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,14,.7),transparent 65%),linear-gradient(180deg,rgba(10,10,14,.25),transparent 42%,rgba(16,16,20,.06) 72%,#101014 100%);z-index:-1;pointer-events:none}
+#view-home .ed-studio-glow,#view-home .tool-stickers,#view-home .ed-float-field,#view-home .ed-workspace-wrap,#view-home .ed-studio-switch,#view-home .hy-hero-veil{display:none!important}
+#view-home .ed-studio-topline{color:#b9aea5!important;width:calc(100% - 120px);font-size:9px;letter-spacing:.13em}
+#view-home .ed-studio-copy{text-align:left;width:calc(100% - 120px);margin:65px auto 0;pointer-events:none}
+#view-home .ed-studio-eyebrow{font-size:10px;color:#d8ae8d;letter-spacing:.13em;margin-bottom:20px}
+#view-home .ed-studio-copy h1{font-size:clamp(46px,4.6vw,76px);font-weight:650;line-height:1.14;letter-spacing:-.055em;color:#fff7ed;text-shadow:0 3px 30px #0005}
+#view-home .ed-studio-copy h1 em{color:#efc7a6!important;-webkit-text-fill-color:#efc7a6;background:none}
+#view-home .ed-studio-copy h1 em::after{display:none}
+#view-home .ed-studio-description{color:#c7bab0;font-size:14px;line-height:1.8;max-width:430px;margin:24px 0 0}
+#view-home .ed-studio-scroll{position:absolute;bottom:35px;left:60px;width:auto;margin:0;color:#c5b4a7!important;font-size:9px;letter-spacing:.14em}
+#view-home .hy-scene-dissolve{display:none!important}
+#view-home header.pf-nav.ed-hybrid-nav,#view-home header.pf-nav.ed-hybrid-nav.is-scrolled{background:rgba(16,16,20,.95)!important;border-bottom:1px solid #30282b!important;color:#f4eee5!important;box-shadow:none!important}
+#view-home .ed-hybrid-nav .pf-brand,#view-home header.pf-nav.ed-hybrid-nav .pf-links a:not(.hy-nav-contact){color:#f4eee5!important}
+#view-home .hy-brand-dot{background:#d78462}
+#view-home .ed-hybrid-nav .pf-links .hy-nav-contact{background:#342622;color:#f0d4ba}
+#view-home header.pf-nav.ed-hybrid-nav .pf-role{color:#b5a79b!important}
+#view-home .pf-meta,#view-home .hy-work-intro,#view-home .pf-projects,#view-home .pf-works,#view-home footer.pf-footer.hy-footer{background:#101014!important;color:#f4eee5!important;border-color:#343035}
+#view-home .pf-title,#view-home .pf-works-title,#view-home .hy-work-intro h2,#view-home .pf-meta strong,#view-home .pf-footer-in,#view-home .hy-footer-main strong{color:#f4eee5!important}
+#view-home .pf-desc,#view-home .pf-sub,#view-home .pf-meta,#view-home .hy-work-intro p,#view-home .pf-footer-links,#view-home .hy-footer-main p{color:#b4aaa2!important}
+#view-home .pf-eyebrow,#view-home .pf-num{color:#d4a384!important}
+#view-home .pf-row,#view-home .pf-footer-in{border-color:#343035!important}
+#view-home .pf-tag,#view-home .hy-skill-chip{background:#211e20!important;border-color:#453634!important;color:#d4c0b0!important}
+#view-home .pf-visual{background:#1c1b20!important;border:1px solid #353036;box-shadow:none!important}
+#view-home .hy-work-intro{padding-top:90px}
+#view-home footer.pf-footer.hy-footer{background:linear-gradient(#101014,#1c1415)!important}
+@media(max-width:700px){#view-home .ed-studio-hero{height:750px;min-height:0;max-height:none}#view-home .cinema-cover{object-position:55% center}#view-home .ed-studio-topline{width:calc(100% - 40px)}#view-home .ed-studio-copy{width:calc(100% - 44px);margin-top:40px}#view-home .ed-studio-copy h1{font-size:46px}#view-home .ed-studio-description{font-size:12px;max-width:260px}#view-home .ed-studio-scroll{left:22px;bottom:25px}#view-home .ed-studio-hero::after{background:linear-gradient(180deg,#10101477,transparent 60%,#101014),linear-gradient(90deg,#10101488,transparent 90%)}}

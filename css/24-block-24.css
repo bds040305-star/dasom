@@ -1,0 +1,20 @@
+
+#view-home .ed-studio-copy{pointer-events:auto}
+#view-home .cinema-tools{display:flex;gap:14px 20px;flex-wrap:wrap;max-width:430px;margin-top:24px;color:#cbbcaf}
+#view-home .cinema-tools span{display:flex;align-items:center;gap:6px;font-size:10px}
+#view-home .cinema-tools i{font-size:19px;color:#edd4bc}
+#view-home .cinema-about{width:min(calc(100% - 96px),1500px);margin:0 auto;padding:100px 0;border-top:1px solid #343035;display:grid;grid-template-columns:1fr 1.4fr;gap:65px;color:#f4eee5}
+#view-home .cinema-kicker{font-size:10px;letter-spacing:.12em;color:#d4a384}
+#view-home .cinema-about h2{font-size:36px;font-weight:550;letter-spacing:-.04em}
+#view-home .cinema-about p{font-size:13px;line-height:1.9;color:#b4aaa2}
+#view-home .cinema-about-details{display:grid;gap:25px}
+#view-home .cinema-about-details article{border-bottom:1px solid #302c30;padding-bottom:18px}
+#view-home .cinema-about-details article>span{font-size:9px;letter-spacing:.12em;color:#d4a384}
+#view-home .cinema-about h3{font-size:17px;font-weight:550;margin:10px 0}
+#view-home .cinema-about b{color:#edc29f;font-weight:550}
+#view-home .tomato-reactions{position:absolute;inset:0;z-index:2;pointer-events:none}
+#view-home .tomato-spot{position:absolute;border:0;background:transparent;pointer-events:auto;border-radius:45%;cursor:pointer;color:#f7e6d4}
+#view-home .tomato-spot span{position:absolute;bottom:95%;left:50%;transform:translate(-50%,8px) rotate(-3deg);white-space:nowrap;background:#302320ed;border:1px solid #c08a6455;border-radius:18px 18px 18px 3px;padding:13px 18px;font-size:13px;box-shadow:0 8px 30px #0004;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none}
+#view-home .tomato-spot:hover span,#view-home .tomato-spot:focus-visible span,#view-home .tomato-spot.is-active span{opacity:1;transform:translate(-50%,-4px) rotate(-3deg)}
+#view-home .tomato-spot:focus-visible{outline:1px dashed #e8b98d;outline-offset:3px}
+@media(max-width:700px){#view-home .cinema-tools{max-width:260px;gap:10px 13px}#view-home .cinema-tools span{font-size:9px}#view-home .cinema-tools i{font-size:16px}#view-home .cinema-about{width:calc(100% - 44px);grid-template-columns:1fr;gap:25px;padding:65px 0}#view-home .cinema-about h2{font-size:28px}#view-home .tomato-spot span{font-size:10px;padding:9px 12px}}

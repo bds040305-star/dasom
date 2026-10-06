@@ -1,0 +1,16 @@
+
+/* EXACTLY the requested app-icon treatment: no folders, no screenshot thumbnails, just app icons. */
+#dasom-os .dos-files{right:32px!important;top:30px!important;grid-template-columns:repeat(2,150px)!important;gap:34px 28px!important;}
+#dasom-os .dos-file{min-height:150px!important;padding:10px 8px 12px!important;border-radius:18px!important;gap:10px!important;background:transparent!important;}
+#dasom-os .dos-file:hover,#dasom-os .dos-file.is-selected{background:rgba(255,255,255,.10)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)!important;}
+#dasom-os .dos-app-icon.project-real-icon{width:104px!important;height:104px!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important;display:grid!important;place-items:center!important;}
+#dasom-os .dos-app-icon.project-real-icon::before,#dasom-os .dos-app-icon.project-real-icon::after{display:none!important;content:none!important;}
+#dasom-os .dos-app-icon.project-real-icon img{width:104px!important;height:104px!important;object-fit:contain!important;display:block!important;filter:none!important;}
+#dasom-os .dos-file:hover .dos-app-icon.project-real-icon{transform:translateY(-2px) scale(1.02)!important;box-shadow:none!important;}
+#dasom-os .dos-file-name{font-size:11px!important;font-weight:600!important;color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.60)!important;max-width:130px!important;overflow:visible!important;text-overflow:clip!important;}
+#dasom-os .dos-file-meta{display:none!important;}
+#dos-dock .real-dock-icon{background:transparent!important;box-shadow:none!important;overflow:visible!important;}
+#dos-dock .real-dock-icon img{width:48px!important;height:48px!important;object-fit:contain!important;border-radius:12px!important;display:block!important;}
+#win-finder .real-finder-icon{width:68px!important;height:68px!important;background:transparent!important;box-shadow:none!important;display:grid!important;place-items:center!important;overflow:visible!important;}
+#win-finder .real-finder-icon::before,#win-finder .real-finder-icon::after{display:none!important;content:none!important;}
+#win-finder .real-finder-icon img{width:64px!important;height:64px!important;object-fit:contain!important;display:block!important;}

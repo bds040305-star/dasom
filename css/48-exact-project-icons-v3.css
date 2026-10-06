@@ -1,0 +1,19 @@
+
+#dasom-os .dos-file > b,
+#dasom-os .dos-file .dos-file-name {
+  display:block !important;
+  font-size:11px !important;
+  font-weight:600 !important;
+  color:#ffffff !important;
+  text-shadow:0 1px 4px rgba(0,0,0,.60) !important;
+  max-width:120px !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  text-align:center !important;
+  line-height:1.25 !important;
+}
+#dasom-os .dos-file > small,
+#dasom-os .dos-file .dos-file-meta {
+  display:none !important;
+}

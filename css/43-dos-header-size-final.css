@@ -1,0 +1,29 @@
+
+/* final macOS header sizing */
+#dasom-os .dos-menubar{
+  height:42px!important;
+  padding:0 16px!important;
+  font-size:13px!important;
+}
+#dasom-os .dos-menu-left{gap:17px!important;}
+#dasom-os .dos-menu-left strong{font-size:13px!important;}
+#dasom-os .dos-menu-left button{font-size:12px!important;}
+#dasom-os .dos-apple{width:17px!important;font-size:13px!important;}
+#dasom-os .dos-menu-right{gap:9px!important;}
+#dasom-os .dos-tools{gap:5px!important;margin-right:7px!important;}
+#dasom-os .dos-tool{
+  width:29px!important;
+  height:29px!important;
+  border-radius:7px!important;
+  font-size:17px!important;
+}
+#dasom-os .dos-tool>i{font-size:17px!important;}
+#dasom-os .dos-tool-text{font-size:10px!important;}
+#dasom-os .dos-tool:after{top:36px!important;font-size:10px!important;padding:6px 8px!important;}
+#dasom-os .dos-status{font-size:13px!important;}
+#dasom-os .dos-date,#dasom-os .dos-clock{font-size:12px!important;font-weight:600!important;}
+#dasom-os .dos-stage{inset:42px 0 0!important;}
+@media(max-width:1000px){
+  #dasom-os .dos-menubar{height:38px!important;}
+  #dasom-os .dos-stage{inset:38px 0 0!important;}
+}

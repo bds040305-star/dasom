@@ -1,0 +1,54 @@
+
+/* Keep the exact supplied project logos visible everywhere */
+#dasom-os .dos-app-icon.has-logo{background:rgba(248,249,252,.96)!important;}
+#dasom-os .dos-app-icon.has-logo img{width:78%!important;height:78%!important;object-fit:contain!important;display:block!important;}
+#dasom-os .dos-app-icon.has-logo.wide img{width:88%!important;height:70%!important;}
+#dasom-os .dos-app-icon.has-logo.dark{background:#111!important;}
+#dasom-os .dos-app-icon.has-logo.dark img{width:88%!important;height:88%!important;}
+#dasom-os .dos-app-icon.has-logo.wells img{width:88%!important;height:48%!important;}
+
+/* macOS menu-bar tools: icons only, no rounded boxes */
+#dasom-os .dos-tools{gap:10px!important;margin-right:10px!important;align-items:center!important;}
+#dasom-os .dos-tool,
+#dasom-os .dos-tool-link,
+#dasom-os .dos-tool-text{
+  width:auto!important;
+  height:auto!important;
+  min-width:0!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  color:rgba(255,255,255,.96)!important;
+  opacity:1!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  overflow:visible!important;
+  line-height:1!important;
+}
+#dasom-os .dos-tool:hover,
+#dasom-os .dos-tool-link:hover,
+#dasom-os .dos-tool-text:hover{background:transparent!important;transform:translateY(-1px);}
+#dasom-os .dos-tool>i{font-size:18px!important;line-height:1!important;}
+#dasom-os .dos-tool-text{font-size:11px!important;font-weight:800!important;letter-spacing:-.06em!important;}
+#dasom-os .dos-tool:after{
+  top:29px!important;
+  background:rgba(28,28,30,.92)!important;
+  border:0!important;
+  border-radius:7px!important;
+  padding:5px 8px!important;
+  font-size:10px!important;
+}
+/* Slightly more room in the enlarged header */
+#dasom-os .dos-menubar{height:44px!important;}
+#dasom-os .dos-stage{inset:44px 0 0!important;}
+@media(max-width:1000px){
+  #dasom-os .dos-menubar{height:40px!important;}
+  #dasom-os .dos-stage{inset:40px 0 0!important;}
+  #dasom-os .dos-tools{gap:7px!important;}
+  #dasom-os .dos-tool>i{font-size:16px!important;}
+}

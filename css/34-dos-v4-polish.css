@@ -1,0 +1,68 @@
+
+/* ===== Dasom OS v4 — Apple-inspired visual polish ===== */
+#dasom-os{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Pretendard Variable",Pretendard,sans-serif!important;background:#e9edf2!important;cursor:default!important}
+#dasom-os .dos-wallpaper{background:
+ radial-gradient(ellipse at 24% 16%,rgba(255,255,255,.98) 0 15%,rgba(255,255,255,0) 42%),
+ radial-gradient(ellipse at 82% 72%,rgba(198,214,232,.68) 0 15%,rgba(198,214,232,0) 46%),
+ linear-gradient(132deg,#f8f9fb 0%,#dfe7f0 34%,#f3f3f5 58%,#cbd6e1 100%)!important;}
+#dasom-os .dos-wallpaper:before{content:"";position:absolute;inset:-14%;background:
+ linear-gradient(105deg,transparent 0 27%,rgba(255,255,255,.64) 30%,rgba(255,255,255,.08) 39%,transparent 48%),
+ linear-gradient(28deg,transparent 0 48%,rgba(255,255,255,.42) 52%,transparent 63%);filter:blur(28px);transform:rotate(-7deg) scale(1.08)}
+#dasom-os .dos-wallpaper:after{content:"";position:absolute;width:70vw;height:36vw;left:16vw;top:18vh;border-radius:50%;border:1px solid rgba(255,255,255,.66);box-shadow:inset 0 0 80px rgba(255,255,255,.38),0 40px 90px rgba(87,106,128,.13);transform:rotate(-17deg);opacity:.75;filter:blur(.1px)}
+#dasom-os .dos-glow{opacity:.32!important;filter:blur(70px)!important}.dos-grain{opacity:.018!important}
+
+#dasom-os .dos-menubar{height:30px!important;padding:0 14px!important;background:rgba(247,249,252,.58)!important;border-bottom:1px solid rgba(255,255,255,.45)!important;box-shadow:0 1px 0 rgba(80,95,112,.05)!important;backdrop-filter:blur(34px) saturate(180%)!important;-webkit-backdrop-filter:blur(34px) saturate(180%)!important;font-size:12px!important}
+#dasom-os .dos-menu-left{gap:17px!important}#dasom-os .dos-menu-right{gap:10px!important}
+#dasom-os .dos-apple{font-size:0!important;width:15px;height:18px;position:relative;background:none!important;border:0!important}
+#dasom-os .dos-apple:before{content:"●";font-size:15px;color:#111;position:absolute;left:1px;top:-1px;transform:scaleX(.92)}
+#dasom-os .dos-tools{display:flex;gap:3px!important;margin-right:7px;padding-right:8px;border-right:1px solid rgba(0,0,0,.09)}
+#dasom-os .dos-tool{width:23px!important;height:23px!important;border-radius:7px!important;background:rgba(255,255,255,.48)!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7)!important;display:grid!important;place-items:center!important;font-size:13px!important;position:relative;transition:.16s ease}
+#dasom-os .dos-tool:hover{background:rgba(255,255,255,.82)!important;transform:translateY(-1px)}
+#dasom-os .dos-tool:after{content:attr(data-tip);position:absolute;top:29px;left:50%;transform:translateX(-50%) translateY(-3px);padding:5px 7px;border-radius:7px;background:rgba(32,32,36,.88);color:#fff;font-size:10px;font-weight:500;white-space:nowrap;opacity:0;pointer-events:none;transition:.13s ease;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+#dasom-os .dos-tool:hover:after{opacity:1;transform:translateX(-50%) translateY(0)}
+#dasom-os .dos-tool-text{font-size:9px!important;font-weight:800!important;letter-spacing:-.04em}
+
+#dasom-os .dos-stage{top:30px!important}
+#dasom-os .dos-greeting{left:4.5vw!important;top:9vh!important;max-width:540px!important}
+#dasom-os .dos-greeting .dos-kicker{font-size:10px!important;letter-spacing:.17em!important;color:rgba(34,43,52,.48)!important}
+#dasom-os .dos-greeting h1{font-size:clamp(43px,5.2vw,82px)!important;line-height:.98!important;letter-spacing:-.067em!important;font-weight:620!important;color:#111820!important;text-shadow:0 1px 0 rgba(255,255,255,.8)}
+#dasom-os .dos-greeting h1 em{font-style:normal!important;font-weight:620!important;color:#455c70!important}
+#dasom-os .dos-greeting p{font-size:14px!important;color:rgba(24,31,38,.55)!important}
+
+#dasom-os .dos-files{right:4.8vw!important;top:8.5vh!important;grid-template-columns:repeat(2,132px)!important;gap:28px 28px!important}
+#dasom-os .dos-file{gap:7px!important;padding:7px!important;border-radius:13px!important}
+#dasom-os .dos-file:hover{background:rgba(255,255,255,.20)!important;backdrop-filter:blur(7px)}
+#dasom-os .dos-file.selected{background:rgba(50,110,255,.13)!important;box-shadow:inset 0 0 0 1px rgba(69,120,230,.14)!important}
+#dasom-os .dos-file-name{font-size:12.5px!important;font-weight:560!important;color:#13181e!important;text-shadow:0 1px 9px rgba(255,255,255,.95)!important}
+#dasom-os .dos-file-meta{font-size:9.5px!important;color:rgba(23,30,37,.46)!important}
+#dasom-os .dos-app-icon{width:82px!important;height:82px!important;border-radius:19px!important;position:relative;display:grid!important;place-items:center!important;overflow:hidden;box-shadow:0 11px 22px rgba(34,49,65,.17),0 2px 5px rgba(33,42,51,.09),inset 0 1px 0 rgba(255,255,255,.75)!important;transition:transform .16s cubic-bezier(.2,.85,.2,1),box-shadow .16s ease!important}
+#dasom-os .dos-file:hover .dos-app-icon{transform:translateY(-2px) scale(1.025)!important;box-shadow:0 15px 28px rgba(34,49,65,.20),0 3px 6px rgba(33,42,51,.09),inset 0 1px 0 rgba(255,255,255,.8)!important}
+#dasom-os .dos-app-icon:after{content:"";position:absolute;inset:1px;border-radius:18px;border:1px solid rgba(255,255,255,.55);pointer-events:none}
+
+/* project icons — intentionally flatter and closer to native macOS icon design */
+#dasom-os .icon-lh{background:linear-gradient(145deg,#ffffff,#eff4f8 60%,#dfe7ed)!important}
+#dasom-os .lh-logo{position:relative;width:66px;height:56px;display:flex;align-items:flex-end;justify-content:center;gap:3px;color:#045cae}
+#dasom-os .lh-logo strong{font-size:31px;line-height:1;font-weight:820;letter-spacing:-.085em}.lh-logo b{font-size:25px;color:#77bd2a;line-height:1;margin:0 0 1px 1px}.lh-bubble{position:absolute;left:9px;top:1px;width:42px;height:22px;background:linear-gradient(90deg,#62bce7,#79bf2f);border-radius:55% 52% 58% 48%;transform:rotate(-14deg);opacity:.96}.lh-bubble:before{content:"";position:absolute;width:15px;height:15px;border-radius:50%;left:-8px;top:6px;background:#6ec682}
+#dasom-os .icon-haevichi{background:linear-gradient(145deg,#20262e,#10151b)!important}
+#dasom-os .hae-logo-wrap{width:63px;height:63px;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:#137cc0;box-shadow:0 0 0 1px rgba(255,255,255,.22),0 5px 12px rgba(0,0,0,.24)}
+#dasom-os .hae-logo-wrap img{width:76px;height:76px;object-fit:cover;transform:scale(1.22);filter:saturate(.98) contrast(1.04)}
+#dasom-os .icon-appletv{background:linear-gradient(145deg,#2b2d31,#060708 72%)!important;color:white!important}
+#dasom-os .apple-tv-mark{display:flex;align-items:center;gap:4px;font-size:28px;letter-spacing:-.065em}.apple-tv-mark .apple-symbol{font-size:19px;color:#fff;filter:drop-shadow(0 1px 1px rgba(0,0,0,.2))}.apple-tv-mark strong{font-size:32px;font-weight:620}.apple-tv-mark sup{font-size:15px;margin-left:-1px;margin-top:-16px}
+#dasom-os .icon-wells{background:linear-gradient(145deg,#f4fff2,#cde9ce)!important}
+#dasom-os .wells-device{width:58px;height:60px;position:relative;display:block}.wells-lamp{position:absolute;left:11px;top:2px;width:38px;height:7px;border-radius:9px;background:#f7f8f6;box-shadow:0 1px 4px rgba(0,0,0,.15)}.wells-lamp:before{content:"";position:absolute;left:-3px;top:0;width:5px;height:38px;border-radius:4px;background:#e4e7e3}.wells-base{position:absolute;bottom:4px;left:6px;width:47px;height:30px;border-radius:10px 10px 14px 14px;background:linear-gradient(#fbfbf9,#e0e3df);box-shadow:0 5px 10px rgba(49,76,50,.13),inset 0 1px 0 #fff}.wells-leaf{position:absolute;left:17px;top:21px;font-size:26px;color:#51a848;transform:rotate(-18deg);z-index:2}
+#dasom-os .icon-naver{background:linear-gradient(145deg,#fff,#f3f3f3)!important}.naver-doc{width:55px;height:64px;background:white;border-radius:5px;box-shadow:0 4px 10px rgba(0,0,0,.08);position:relative;padding-top:10px}.naver-doc:after{content:"";position:absolute;right:0;top:0;border-style:solid;border-width:0 0 15px 15px;border-color:transparent transparent #e6e6e6 transparent}.naver-doc strong{display:block;font-size:34px;line-height:1;color:#03c75a;font-weight:900}.naver-doc i{display:block;width:29px;height:3px;background:#d9dde1;border-radius:2px;margin:5px auto 0}.naver-doc i+ i{width:20px;margin-top:4px}
+#dasom-os .icon-about{background:linear-gradient(145deg,#f9fbff,#dce6f2)!important}.ds-monogram{font-family:Georgia,"Times New Roman",serif;font-size:30px;letter-spacing:-.10em;color:#7a8899;text-shadow:0 1px 0 white}
+
+#dasom-os .dos-dock-wrap{bottom:15px!important}#dasom-os .dos-dock{padding:7px 9px 6px!important;gap:6px!important;border-radius:20px!important;background:rgba(246,249,253,.52)!important;border:1px solid rgba(255,255,255,.72)!important;box-shadow:0 18px 42px rgba(46,60,76,.22),inset 0 1px 0 rgba(255,255,255,.9)!important;backdrop-filter:blur(30px) saturate(175%)!important}
+#dasom-os .dos-dock-icon{width:45px!important;height:45px!important;border-radius:12px!important;box-shadow:0 4px 9px rgba(0,0,0,.14)!important;transition:transform .13s cubic-bezier(.22,.86,.3,1),margin .13s ease!important}
+#dasom-os .dos-dock-icon:hover{transform:translateY(-10px) scale(1.27)!important;margin:0 5px!important}
+#dasom-os .dos-dock-icon img{width:44px;height:44px;object-fit:cover;border-radius:12px;transform:scale(1.25)}
+#dasom-os .mini-lh{background:linear-gradient(145deg,#fff,#e8f0f5)!important;color:#0961ab!important;font-weight:850!important}.mini-hae{overflow:hidden;background:#17202a!important}.mini-tv{background:linear-gradient(145deg,#26282c,#050506)!important;color:#fff!important;font-weight:650!important}.mini-wells{background:linear-gradient(145deg,#effaed,#cce7cb)!important;color:#4e9d4a!important}.mini-naver{background:#fff!important;color:#03c75a!important;font-weight:900!important}.mini-about{background:linear-gradient(145deg,#f5f8fb,#d9e4ee)!important;color:#6d7b88!important;font-family:Georgia,serif!important}
+
+#dasom-os .dos-window{border-radius:13px!important;background:rgba(250,251,252,.86)!important;border:1px solid rgba(255,255,255,.75)!important;box-shadow:0 32px 90px rgba(38,50,64,.28),0 7px 22px rgba(38,50,64,.13)!important;backdrop-filter:blur(40px) saturate(155%)!important;-webkit-backdrop-filter:blur(40px) saturate(155%)!important;overflow:hidden!important}
+#dasom-os .dos-window-bar{height:45px!important;background:rgba(246,247,249,.72)!important;border-bottom:1px solid rgba(55,65,75,.09)!important;backdrop-filter:blur(24px)!important}
+#dasom-os .dos-finder-window{background:rgba(246,248,251,.82)!important}.dos-sidebar{background:rgba(228,233,239,.52)!important}.dos-sidebar button.active{background:rgba(0,106,255,.82)!important;color:#fff!important}
+#dasom-os .dos-finder-grid{gap:27px 26px!important;padding:27px 30px!important}.finder-file{border-radius:10px!important;padding:8px!important}.finder-file:hover{background:rgba(0,106,255,.07)!important}.finder-icon{width:80px!important;height:64px!important;border-radius:9px 12px 12px 12px!important;background:linear-gradient(155deg,#71bdf5,#268edb)!important;box-shadow:0 7px 14px rgba(43,111,166,.2),inset 0 1px 0 rgba(255,255,255,.6)!important;overflow:hidden!important}.finder-icon.dark{background:linear-gradient(145deg,#27292d,#08090a)!important}.finder-hae-logo{width:70px;height:70px;object-fit:cover;border-radius:50%;transform:scale(1.2);filter:saturate(.96)}.mini-logo{font-weight:800!important}.mini-logo.naver{color:#03c75a!important}.mini-logo.lh{color:#fff!important}.mini-logo.tv{color:#fff!important;font-weight:650!important;letter-spacing:-.08em}
+
+#dasom-os .dos-desktop-note{font-size:11px!important;color:rgba(22,30,38,.42)!important}.dos-note-dot{background:#0a84ff!important}
+@media(max-width:1100px){#dasom-os .dos-files{grid-template-columns:repeat(2,120px)!important;right:2.4vw!important}.dos-greeting{left:3vw!important}}

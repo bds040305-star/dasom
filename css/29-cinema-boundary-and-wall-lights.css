@@ -1,0 +1,18 @@
+
+/* Keep the previous hero image and hover behavior; blend only the lower edge. */
+#view-home main{background:#0c0d10!important}
+#view-home .ed-studio-hero{background:#0c0d10!important}
+#view-home .cinema-cover{filter:brightness(.9) saturate(.8);mask-image:none;-webkit-mask-image:none}
+#view-home .cinema-hover-cover{mask-image:none;-webkit-mask-image:none;transition:opacity .35s ease}
+#view-home .ed-studio-hero::after{background:linear-gradient(90deg,rgba(12,13,16,.24),transparent 65%),linear-gradient(180deg,transparent 52%,rgba(12,13,16,.3) 72%,rgba(12,13,16,.88) 92%,#0c0d10 100%)}
+#view-home .hy-work-intro{background:transparent!important;border:0!important;box-shadow:none!important;margin-top:0;padding-top:70px}
+#view-home .pf-projects,#view-home .pf-row{background:transparent!important}
+#view-home .pf-visual{position:relative;overflow:visible!important;background:radial-gradient(ellipse 66% 64% at 50% 40%,rgba(108,130,160,.075),transparent 80%)!important;isolation:isolate}
+#view-home .cinema-side-lights{position:absolute;inset:0;z-index:0;pointer-events:none}
+#view-home .cinema-wall-light{position:absolute;top:32%;width:4px;height:74px;border-radius:99px;background:linear-gradient(180deg,transparent,#ecdcc4 18%,#fff0d8 50%,#ecdcc4 82%,transparent);box-shadow:0 0 9px 2px #edc49466,0 0 34px 9px #dfa56c15;opacity:.78}
+#view-home .cinema-wall-light--left{left:10px}
+#view-home .cinema-wall-light--right{right:10px}
+#view-home .cinema-wall-light::before{content:"";position:absolute;left:-62px;top:-100px;width:128px;height:280px;background:radial-gradient(ellipse at 50% 50%,rgba(223,183,133,.095),rgba(209,169,121,.025) 45%,transparent 74%);filter:blur(10px)}
+#view-home .cinema-wall-light::after{content:"";position:absolute;left:-27px;top:-8px;width:58px;height:92px;background:radial-gradient(ellipse,rgba(255,225,181,.08),transparent 72%)}
+#view-home .pf-visual .pf-parallax{z-index:1}
+@media(max-width:700px){#view-home .hy-work-intro{padding-top:45px}#view-home .cinema-wall-light{width:3px;height:45px;top:33%}#view-home .cinema-wall-light--left{left:0}#view-home .cinema-wall-light--right{right:0}#view-home .cinema-wall-light::before{width:90px;height:190px;left:-43px;top:-68px}}

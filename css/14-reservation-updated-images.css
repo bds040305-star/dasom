@@ -1,0 +1,8 @@
+
+#view-haevichi #reservation .reservation-updated-grid {display:grid;grid-template-columns:minmax(0,1fr) 180px!important;gap:24px;align-items:start;}
+#view-haevichi #reservation .reservation-updated-grid .mockup-card img {max-height:none;object-fit:contain;height:auto;}
+#view-haevichi #reservation .reservation-mobile-preview {width:180px;margin-top:45px;}
+@media(max-width:600px){
+#view-haevichi #reservation .reservation-updated-grid {grid-template-columns:1fr!important;gap:28px;}
+#view-haevichi #reservation .reservation-mobile-preview {width:210px;justify-self:center;margin-top:0;}
+}

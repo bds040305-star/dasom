@@ -1,0 +1,42 @@
+
+/* Reflow the lower case study: less vertical stacking, stronger visual hierarchy. */
+#view-haevichi #result .sec-head{max-width:820px;margin-bottom:54px;}
+#view-haevichi #result .ix-block{max-width:1360px;margin:0 auto 96px;display:grid;grid-template-columns:280px minmax(0,1fr);column-gap:64px;align-items:start;}
+#view-haevichi #result .ix-head{grid-column:1;grid-row:1;margin:3px 0 14px;}
+#view-haevichi #result .ix-why{grid-column:1;grid-row:2;max-width:none;margin:0;padding-left:16px;font-size:14px;line-height:1.8;}
+#view-haevichi #result .ba-slider,#view-haevichi #result .ix-shot,#view-haevichi #result .live-embed,#view-haevichi #result .live-embed-mobile-row{grid-column:2;grid-row:1 / span 3;margin:0;max-width:none;width:100%;transform:none;}
+#view-haevichi #result .ba-media{height:500px;}
+#view-haevichi #result .live-embed iframe{height:560px;}
+#view-haevichi #result .live-embed-mobile-row{display:flex;gap:32px;justify-content:center;flex-wrap:wrap;}
+#view-haevichi #result .live-embed-mobile{width:280px;flex:none;}
+#view-haevichi #result .live-embed-mobile iframe{width:280px;height:560px;}
+#view-haevichi #result .live-embed-mobile .live-embed-bar{padding:0 10px;}
+#view-haevichi #result .live-embed-mobile .url{font-size:10px;}
+#view-haevichi #result .ba-browser-frame{box-shadow:0 16px 36px rgba(23,25,28,.09);}
+#view-haevichi #result .doc-caption{font-size:12px;line-height:1.6;}
+#view-haevichi #result .ix-block:nth-of-type(2) .ix-shot img{max-height:560px;width:100%;object-fit:contain;}
+#view-haevichi #result .ix-block:nth-of-type(3) .ba-media{height:470px;}
+#view-haevichi #result>.wrap>.shot-grid.four{max-width:1360px;margin:0 auto 74px;grid-template-columns:repeat(4,1fr);gap:16px;}
+#view-haevichi #result>.wrap>.shot-grid.four .shot img{height:170px;object-fit:cover;}
+#view-haevichi #result>.wrap>.shot-grid:not(.four){max-width:1360px;margin:0 auto 92px;}
+#view-haevichi #result>.wrap>.shot-grid:not(.four) .shot img{max-height:480px;object-fit:contain;margin:0 auto;}
+#view-haevichi #reservation .sec-head{max-width:820px;margin-bottom:42px;}
+#view-haevichi #reservation> .wrap>svg{max-width:1080px;margin:8px auto 54px!important;display:block;}
+#view-haevichi #reservation .ix-block{max-width:1360px;margin:0 auto 78px;display:grid;grid-template-columns:280px minmax(0,1fr);column-gap:64px;align-items:start;}
+#view-haevichi #reservation .ix-head{grid-column:1;grid-row:1;margin:3px 0 14px;}
+#view-haevichi #reservation .ix-why{grid-column:1;grid-row:2;max-width:none;margin:0;padding-left:16px;font-size:14px;line-height:1.8;}
+#view-haevichi #reservation .mockup-grid{grid-column:2;grid-row:1 / span 3;max-width:none;margin:0;}
+#view-haevichi #reservation .mockup-card img{max-height:520px;object-fit:contain;width:100%;}
+#view-haevichi #test .cx-row{max-width:1360px;}
+@media(max-width:900px){
+ #view-haevichi #result .ix-block,#view-haevichi #reservation .ix-block{display:block;max-width:none;margin-bottom:70px;}
+ #view-haevichi #result .ix-head,#view-haevichi #result .ix-why,#view-haevichi #reservation .ix-head,#view-haevichi #reservation .ix-why{margin-bottom:16px;}
+ #view-haevichi #result .ba-slider,#view-haevichi #result .ix-shot,#view-haevichi #result .live-embed,#view-haevichi #reservation .mockup-grid{margin-top:24px;}
+ #view-haevichi #result .live-embed iframe{height:420px;}
+ #view-haevichi #result .ba-media,#view-haevichi #result .ix-block:nth-of-type(3) .ba-media{height:380px;}
+ #view-haevichi #result>.wrap>.shot-grid.four{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:560px){
+ #view-haevichi #result>.wrap>.shot-grid.four{grid-template-columns:1fr 1fr;gap:8px;}
+ #view-haevichi #result>.wrap>.shot-grid.four .shot img{height:120px;}
+}

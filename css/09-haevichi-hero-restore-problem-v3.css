@@ -1,0 +1,58 @@
+
+/* Restore the original Haevichi hero exactly; keep the later editorial sections. */
+#view-haevichi .p-hero{width:100%!important;min-height:0!important;position:relative!important;overflow:hidden!important;padding:104px 0 72px!important;background:transparent!important;}
+#view-haevichi .p-hero::after{content:none!important;display:none!important;}
+#view-haevichi .p-hero-inner{width:var(--content)!important;margin:0 auto!important;display:block!important;position:relative!important;z-index:2!important;}
+#view-haevichi .p-hero-inner>img{height:34px!important;width:auto!important;margin:0 0 18px!important;display:block!important;}
+#view-haevichi .p-eyebrow{font-size:13px!important;font-weight:600!important;letter-spacing:.14em!important;color:var(--accent)!important;margin-bottom:24px!important;display:flex!important;}
+#view-haevichi .p-title{font-weight:700!important;font-size:56px!important;line-height:1.16!important;letter-spacing:-.02em!important;max-width:none!important;margin:0 0 10px!important;}
+#view-haevichi .p-title-en{font-weight:500!important;color:var(--muted)!important;font-size:17px!important;margin-bottom:40px!important;max-width:none!important;}
+#view-haevichi .p-hook{max-width:700px!important;font-size:17px!important;line-height:1.85!important;color:#4B4D48!important;margin:0 0 48px!important;}
+#view-haevichi .p-hero .meta-row{display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:28px!important;margin:0!important;padding-top:32px!important;border-top:1px solid var(--line)!important;border-bottom:0!important;}
+#view-haevichi .p-hero .live-embed{width:min(1840px,calc(100vw - 80px))!important;height:auto!important;margin:36px 50% 0!important;transform:translateX(-50%)!important;border:1px solid var(--line)!important;border-radius:0!important;overflow:hidden!important;background:#1C1C1A!important;box-shadow:none!important;position:relative!important;z-index:auto!important;}
+#view-haevichi .p-hero .live-embed::after{content:none!important;}
+#view-haevichi .p-hero .live-embed iframe{height:940px!important;}
+
+/* Rebuilt second page: flat editorial rows instead of floating cards. */
+#view-haevichi #problem{padding:130px 0 150px!important;background:#fff!important;}
+#view-haevichi #problem::before{content:'DISCOVER';position:absolute;left:max(28px,calc((100vw - 1180px)/2));top:60px;width:auto;height:auto;border-radius:0;background:none;transform:none;font-size:12px;font-weight:700;letter-spacing:.2em;color:#5c7180;}
+#view-haevichi #problem::after{content:'04';position:absolute;right:max(28px,calc((100vw - 1180px)/2));top:44px;font-size:56px;line-height:1;font-weight:300;letter-spacing:-.07em;color:#edf1f3;}
+#view-haevichi #problem .sec-head{grid-template-columns:1.05fr .52fr!important;gap:64px!important;margin-bottom:56px!important;margin-top:34px!important;position:relative;}
+#view-haevichi #problem .sec-title{font-size:clamp(46px,5vw,76px)!important;max-width:720px;}
+#view-haevichi #problem .sec-num{font-size:10px!important;letter-spacing:.15em!important;color:#93a3ac!important;margin-bottom:10px!important;}
+#view-haevichi #problem .ps-list{display:block!important;border-top:1px solid #18232a!important;counter-reset:problem-row;}
+#view-haevichi #problem .ps-item{counter-increment:problem-row;display:grid!important;grid-template-columns:90px minmax(230px,.72fr) minmax(360px,1.28fr)!important;gap:34px!important;align-items:start!important;min-height:0!important;margin:0!important;padding:32px 0 36px!important;border:0!important;border-bottom:1px solid #dce1e4!important;border-radius:0!important;background:transparent!important;color:var(--ref-black)!important;box-shadow:none!important;position:relative;transition:padding .35s ease,background .35s ease;}
+#view-haevichi #problem .ps-item:hover{padding-left:24px!important;padding-right:24px!important;background:#f7f9fa!important;}
+#view-haevichi #problem .ps-num{font-size:11px!important;line-height:1!important;letter-spacing:.14em!important;color:#7191a4!important;margin:7px 0 0!important;}
+#view-haevichi #problem .ps-body{display:contents;}
+#view-haevichi #problem .ps-title{font-size:clamp(23px,2vw,31px)!important;line-height:1.25!important;letter-spacing:-.035em!important;font-weight:580!important;margin:0!important;max-width:310px;}
+#view-haevichi #problem .ps-problem{font-size:13px!important;line-height:1.8!important;color:#7a8084!important;margin:2px 0 25px!important;max-width:560px;}
+#view-haevichi #problem .ps-solution{grid-column:3!important;font-size:13px!important;line-height:1.8!important;color:#26343d!important;margin:0!important;padding:18px 20px!important;border:0!important;background:#eef3f6!important;max-width:560px;}
+#view-haevichi #problem .ps-solution span{font-size:9px!important;letter-spacing:.13em!important;border:0!important;border-radius:0!important;background:var(--ref-blue)!important;color:#fff!important;padding:5px 8px!important;margin-right:11px!important;}
+#view-haevichi #problem .ps-item:nth-child(2){color:inherit!important;}
+#view-haevichi #problem .ps-item:nth-child(2) .ps-num,#view-haevichi #problem .ps-item:nth-child(2) .ps-problem{color:#7a8084!important;}
+#view-haevichi #problem .ps-item:nth-child(2)::after{content:'KEY ISSUE';position:absolute;right:0;top:18px;font-size:8px;letter-spacing:.16em;color:var(--ref-blue);}
+
+@media(max-width:900px){
+ #view-haevichi .p-hero{padding:104px 0 72px!important;}
+ #view-haevichi .p-hero-inner{width:var(--content)!important;}
+ #view-haevichi .p-hero .meta-row{grid-template-columns:1fr 1fr!important;gap:20px!important;}
+ #view-haevichi .p-hero .live-embed{width:100%!important;margin:28px 0 0!important;transform:none!important;}
+ #view-haevichi .p-hero .live-embed iframe{height:640px!important;}
+ #view-haevichi #problem .ps-item{grid-template-columns:55px 1fr!important;gap:18px 28px!important;}
+ #view-haevichi #problem .ps-body{display:block;}
+ #view-haevichi #problem .ps-title{max-width:none;margin-bottom:18px!important;}
+ #view-haevichi #problem .ps-solution{grid-column:2!important;}
+}
+@media(max-width:600px){
+ #view-haevichi .p-title{font-size:38px!important;}
+ #view-haevichi .p-hero .meta-row{grid-template-columns:1fr 1fr!important;}
+ #view-haevichi .p-hero .live-embed iframe{height:440px!important;}
+ #view-haevichi #problem{padding:110px 0 130px!important;}
+ #view-haevichi #problem::before,#view-haevichi #problem::after{display:none!important;}
+ #view-haevichi #problem .sec-head{grid-template-columns:1fr!important;gap:24px!important;margin-bottom:70px!important;}
+ #view-haevichi #problem .ps-item{display:block!important;padding:34px 0 38px!important;}
+ #view-haevichi #problem .ps-item:hover{padding-left:0!important;padding-right:0!important;background:transparent!important;}
+ #view-haevichi #problem .ps-num{display:block!important;margin-bottom:20px!important;}
+ #view-haevichi #problem .ps-solution{margin-top:22px!important;}
+}

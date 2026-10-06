@@ -1,0 +1,13 @@
+
+/* Apple TV: black app tile + logo only */
+#dasom-os .dos-file[data-project="apple"] .dos-app-icon.project-real-icon {
+  background-color:#111216 !important;
+  background-image:url('../assets/images/034-css-apple-tv-logo-only-fix-997c61e88e44.png') !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:68% auto !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+#dasom-os .dos-file[data-project="apple"] .dos-app-icon.project-real-icon img {
+  display:none !important;
+}

@@ -1,0 +1,10 @@
+
+#view-haevichi #test .note-box{
+  width:min(1220px,82%)!important;
+  margin:72px auto 0!important;
+  text-align:center!important;
+  display:block!important;
+}
+@media(max-width:900px){
+  #view-haevichi #test .note-box{width:100%!important;margin:56px auto 0!important;}
+}

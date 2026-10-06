@@ -1,0 +1,25 @@
+
+.dos-tool{display:grid!important;place-items:center!important;overflow:hidden!important}
+.dos-tool>i{font-size:13px!important}
+.dos-tool-text{font-size:8px!important;font-weight:800!important;letter-spacing:-.05em!important}
+.dos-tool-gs{font-family:Arial,sans-serif!important;font-weight:800!important;}
+.dos-app-icon.has-logo{background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(231,236,245,.94))!important;}
+.dos-app-icon.has-logo img{width:70%;height:70%;object-fit:contain;display:block;filter:drop-shadow(0 1px 1px rgba(0,0,0,.08));}
+.dos-app-icon.has-logo.wide img{width:84%;height:62%;}
+.dos-app-icon.has-logo.dark{background:linear-gradient(180deg,#212226,#060607)!important;}
+.dos-app-icon.has-logo.dark img{width:78%;height:78%;}
+.dos-app-icon.has-logo.wells img{width:82%;height:40%;}
+
+#dos-dock .brand-dock{background:rgba(249,250,252,.92)!important;color:#111!important;overflow:hidden!important;}
+#dos-dock .brand-dock.dark{background:linear-gradient(180deg,#232428,#070708)!important;}
+#dos-dock .brand-dock img{width:68%;height:68%;object-fit:contain;display:block;}
+#dos-dock .brand-dock.wide img{width:78%;height:52%;}
+#dos-dock .brand-dock.wells img{width:80%;height:28%;}
+
+.finder-icon.logo-folder{background:transparent!important;box-shadow:none!important;display:grid!important;place-items:center!important;}
+.finder-icon.logo-folder::before,.finder-icon.logo-folder::after{display:none!important;}
+.finder-icon.logo-folder img{max-width:100%;max-height:100%;object-fit:contain;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,.12));}
+.finder-icon.logo-folder.wide img{width:92%;height:54%;}
+.finder-icon.logo-folder.dark{background:linear-gradient(145deg,#313238,#050507)!important;border-radius:14px!important;width:61px!important;height:61px!important;box-shadow:0 7px 13px #0004!important;}
+.finder-icon.logo-folder.dark img{width:86%;height:86%;}
+.finder-icon.logo-folder.wells img{width:94%;height:34%;}
